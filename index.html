@@ -14,7 +14,11 @@
 		<link href="css/fonts.css" rel="stylesheet">
 
 		<!-- LIBS -->
-		<script src="js/libs/head.min.js"></script>
+		<!--[if lte IE 9]>
+			<script src="js/libs/head.js"></script> 
+		<![endif]-->
+
+		<script src="js/libs/head.min.js"></script>  
 		<script src="js/libs/FileSaver.min.js"></script>
 		<script src="js/libs/Blob.min.js"></script>
 		<script src="js/libs/screenfull.min.js"></script>
@@ -56,9 +60,9 @@
 				<span class="no-overflow">
 					<span class="lengthen ui-inputs">
 						<button class="url useicons">&#xe005;</button>
-						<input class="url-input" type="text" placeholder="Type or Paste URL here"/>
 						<button class="bold">b</button>
 						<button class="italic">i</button>
+						<input class="url-input" type="text" placeholder="Type or Paste URL here"/>
 						<button class="quote">&rdquo;</button>
 					</span>
 				</span>
